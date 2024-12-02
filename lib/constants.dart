@@ -1,7 +1,7 @@
 import 'package:ecommers_new/size_config.dart';
 import 'package:flutter/material.dart';
 
-const kServerURL = 'http://127.0.0.1:8000';
+const kServerURL = 'http://192.168.0.13:8000';
 const kServerAuthApiURL = '$kServerURL/rest-auth';
 const kServerApiURL = '$kServerURL/api';
 

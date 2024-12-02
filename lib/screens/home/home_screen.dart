@@ -21,7 +21,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen>
     with SingleTickerProviderStateMixin {
-  static TextEditingController _controller = TextEditingController();
+  static final TextEditingController _controller = TextEditingController();
   final GlobalKey<RefreshIndicatorState> _refreshIndicatorKey = GlobalKey();
 
   @override
@@ -33,9 +33,9 @@ class _HomeScreenState extends State<HomeScreen>
 
   @override
   Widget build(BuildContext context) {
-    var _spacer = SizedBox(height: getProportionateScreenHeight(20.0));
+    var spacer = SizedBox(height: getProportionateScreenHeight(20.0));
 
-    Future<Null> _refresh() async {
+    Future<Null> refresh() async {
       await Provider.of<CarouselProvider>(context, listen: false)
           .fetchImageURLs();
       await Provider.of<TrendProductProvider>(context, listen: false)
@@ -50,7 +50,7 @@ class _HomeScreenState extends State<HomeScreen>
               SliverAppBar(
                 forceElevated: innerBoxIsScrolled,
                 floating: true,
-                title: Center(
+                title: const Center(
                   child: Text(
                     'Emre\'s E-Commerce',
                     style: TextStyle(
@@ -87,12 +87,12 @@ class _HomeScreenState extends State<HomeScreen>
               Flexible(
                 child: RefreshIndicator(
                   key: _refreshIndicatorKey,
-                  onRefresh: _refresh,
+                  onRefresh: refresh,
                   child: ListView(
                     children: [
-                      _spacer,
-                      HomeCarousel(),
-                      _spacer,
+                      spacer,
+                      const HomeCarousel(),
+                      spacer,
                       TrendProducts(),
                     ],
                   ),

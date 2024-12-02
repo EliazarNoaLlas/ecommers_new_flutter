@@ -2,6 +2,11 @@
 
 ## Descripción del Proyecto
 
+Un sitio web de comercio electrónico utilizando mi [API del servidor web de Django(https://github.com/emrecoskun705/e_commerce)].
+
+El propósito de este proyecto fue únicamente educativo. Quería simular la relación entre una aplicación móvil y un servidor web, y hacer que esta relación sea lo más segura posible. La mayor parte de la seguridad se encuentra en mi [API del servidor web de Django(https://github.com/emrecoskun705/e_commerce)].
+
+
 Esta es una aplicación de comercio electrónico desarrollada con Flutter, que ofrece una experiencia completa de compras móviles con múltiples funcionalidades.
 
 ## Características Principales
@@ -132,7 +137,22 @@ flutter build ios
 - [ ] Implementar más métodos de pago
 - [ ] Mejorar la experiencia de búsqueda
 - [ ] Añadir notificaciones push
+- 
 - [ ] Optimizar rendimiento
 - [ ] Internacionalización de la aplicación
 
 **¡Gracias por tu interés en el proyecto!**
+
+## Tecnología
+
+En la aplicación móvil he utilizado Provider como gestor de estado.
+
+- Flutter 2.2.3
+- Dart 2.13.4
+- Todos los demás requisitos están en el archivo `pubspec.yaml`
+- API de Google para autenticación con Google utilizando [[API del servidor web de Django]](https://github.com/emrecoskun705/e_commerce)
+
+## Ejemplo de uso
+
+
+https://user-images.githubusercontent.com/57330864/134556977-b3fb6c10-95da-4df4-8d46-e37961ec6b8d.mp4

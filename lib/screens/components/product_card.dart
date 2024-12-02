@@ -14,11 +14,11 @@ class ProductCard extends StatefulWidget {
   final MinimalProduct product;
   //final Product product;
   const ProductCard({
-    Key? key,
+    super.key,
     this.width = 140,
     this.aspectRatio = 1.02,
     required this.product,
-  }) : super(key: key);
+  });
 
   @override
   _ProductCardState createState() => _ProductCardState();
